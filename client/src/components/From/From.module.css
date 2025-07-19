@@ -1,0 +1,45 @@
+.from {
+  position: relative;
+  margin-top: 5%;
+  left: 0%;
+  padding: 2%;
+
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #a3a3a3;
+}
+
+.input,
+.textarea {
+  border: none;
+  padding: 0.2%;
+
+  top: 0px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  margin-bottom: 1%;
+  width: 100%;
+  font-size: 40px;
+  background: #060d27;
+  color: white;
+}
+
+@media (max-width: 990px) {
+  .from {
+    margin-top: 0%;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 450px) {
+  .input,
+  textarea {
+    font-size: 30px;
+  }
+}

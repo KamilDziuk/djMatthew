@@ -1,0 +1,131 @@
+/* MAIN NAVIGATION (HEADER) */
+.styleNav ul {
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 25px;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* FOOTER NAVIGATION */
+.styleNavFooter ul {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  top: 1px;
+  z-index: 1;
+}
+
+/* LIST ITEMS IN MAIN NAVIGATION */
+.styleNav ul li {
+  margin: 0;
+}
+
+/* LIST ITEMS IN FOOTER NAVIGATION */
+.styleNavFooter ul li {
+  margin: 0;
+}
+
+/* LINKS IN MAIN NAVIGATION */
+.styleNav ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* LINKS IN FOOTER NAVIGATION */
+.styleNavFooter ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #ffffff !important;
+  transition: 2s;
+}
+
+/* HOVER EFFECT FOR LINKS IN MAIN NAVIGATION */
+.styleNav ul li a:hover {
+  border-bottom: 2px solid #fff;
+  color: #bebebe;
+  transition: 2s;
+}
+
+/* HOVER EFFECT FOR LINKS IN FOOTER NAVIGATION */
+.styleNavFooter ul li a:hover {
+  border-bottom: 2px solid #fff;
+  color: #bebebe;
+  transition: 2s;
+}
+
+@media screen and (max-width: 1140px) {
+  .styleNav ul li a {
+    font-size: 17px;
+  }
+
+  .styleNavFooter ul li a {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .styleNav ul li a {
+    padding: 5px;
+  }
+
+  .styleNavFooter ul li a {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .styleNav ul {
+    padding: 23px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: block;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .styleNavFooter ul {
+    padding: 23px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: block;
+    left: 50%;
+    top: 0%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  /* LINKS IN MAIN NAVIGATION FOR SMALL SCREENS */
+  .styleNav ul li a {
+    padding-top: 10%;
+    font-size: 30px;
+    border-bottom: 2px solid #fff;
+    transition: 2s;
+    color: rgb(255, 255, 255) !important;
+  }
+
+  /* LINKS IN FOOTER NAVIGATION FOR SMALL SCREENS */
+  .styleNavFooter ul li a {
+    padding-top: 5%;
+    font-size: 30px;
+    transition: 2s;
+  }
+}

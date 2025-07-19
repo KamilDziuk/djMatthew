@@ -1,0 +1,326 @@
+/* FIRST SECTION IMAGE (HERO OR INTRO SECTION) */
+.firstSectionImage {
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  margin-top: 30px;
+  padding: 5%;
+  width: 800px;
+  height: 800px;
+  clip-path: polygon(25% 0%, 100% 0%, 79% 100%, 0% 100%);
+  animation: changingImgColors 3s ease infinite;
+  background-size: 200% 200%;
+}
+
+/* HEADER BACKGROUND IMAGE */
+.headerImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: -1;
+}
+
+/* SECOND SECTION BACKGROUND IMAGE */
+.secondImage {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: -1;
+}
+
+/* PACKAGES SECTION IMAGE */
+.packagesSectionImage {
+  margin-top: 30%;
+  padding: 0.5%;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 7%;
+}
+
+/* GALLERY SECTION IMAGE */
+.firstSectionGallery {
+  background: #020024;
+  background: linear-gradient(
+    50deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgb(0, 0, 73) 35%,
+    rgb(232, 14, 14) 100%
+  );
+  margin-top: 30px;
+  padding: 5%;
+  width: 600px;
+  height: 600px;
+  clip-path: polygon(
+    47% 9%,
+    74% 18%,
+    100% 0,
+    100% 79%,
+    68% 100%,
+    13% 87%,
+    0 100%,
+    0 71%,
+    0 33%
+  );
+  animation: changingImgColors 5s ease infinite;
+  background-size: 200% 200%;
+}
+
+/* ABOUT SECTION IMAGE */
+.firstSectionAboutImage {
+  margin-top: 30px;
+  padding: 3%;
+  width: 600px;
+  height: 500px;
+  clip-path: polygon(45% 9%, 100% 20%, 70% 90%, 10% 90%);
+}
+
+/* PACKAGE CART IMAGE */
+.packageCartImage {
+  margin-top: 20%;
+  padding: 3%;
+  width: 600px;
+  height: 500px;
+}
+
+/* PACKAGES SECTION (ALTERNATE IMAGE) */
+.firstSectionPackagesImage {
+  margin-top: 30px;
+  padding: 3%;
+  width: 600px;
+  height: 500px;
+  clip-path: polygon(45% 9%, 100% 20%, 70% 90%, 10% 90%);
+}
+
+/* CONTACT SECTION IMAGE */
+.firstSectionContactImage {
+  margin-top: 30px;
+  padding: 3%;
+  width: 700px;
+  height: 600px;
+}
+
+/* FOOTER IMAGE */
+.imageFooter {
+  padding: -1%;
+  width: 300px;
+  height: 300px;
+  z-index: 9999;
+}
+
+/* GALLERY THUMBNAILS */
+.imageGallery {
+  padding: 2%;
+  width: 31%;
+  height: 40%;
+  scale: 1;
+  transition: 1s;
+}
+
+.imageGallery:hover {
+  scale: 1.5;
+  transition: 1s;
+  z-index: 999;
+}
+
+/* MENU ICON IMAGE */
+.imageMenu {
+  position: fixed;
+  top: 0px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  z-index: 999999999;
+}
+
+/* LOGO IMAGE */
+.logoSection {
+  position: relative;
+  margin-left: 70%;
+  margin-top: -15%;
+  width: 200px;
+  height: 200px;
+  rotate: 360deg;
+  transition: 3s;
+}
+
+.logoSection:hover {
+  rotate: -360deg;
+  transition: 3s;
+}
+
+/* KEYFRAME ANIMATION FOR GRADIENTS */
+@keyframes changingImgColors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+    background: 60deg;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+  .firstSectionPackagesImage {
+    position: relative;
+    margin-bottom: -90%;
+    margin-top: 60%;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .secondImage {
+    height: 500px;
+  }
+
+  .firstSectionGallery {
+    position: relative;
+    margin-bottom: -20%;
+    margin-top: 30%;
+    padding: 5%;
+    width: 50%;
+    height: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .logoSection {
+    position: relative;
+    margin-left: 20%;
+    margin-top: 12%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .packagesSectionImage {
+    border-radius: 7%;
+    width: 70%;
+    height: 70%;
+  }
+
+  .imageGallery {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .secondImage {
+    height: 400px;
+  }
+
+  .imageMenu {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 100px;
+    z-index: 999999999;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .secondImage {
+    height: 300px;
+  }
+
+  .packagesSectionImage {
+    position: relative;
+    margin-bottom: -50%;
+    margin-top: 100%;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .firstSectionImage {
+    position: relative;
+    margin-bottom: -50%;
+    margin-top: 100%;
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .firstSectionGallery {
+    position: relative;
+    margin-bottom: -50%;
+    margin-top: 60%;
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .firstSectionAboutImage {
+    position: relative;
+    margin-bottom: 12%;
+    margin-top: 80%;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .packageCartImage {
+    position: relative;
+    margin-bottom: 12%;
+    margin-top: 40%;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .firstSectionContactImage {
+    position: relative;
+    margin-bottom: -50%;
+    margin-top: 100%;
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .imageFooter {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .logoSection {
+    width: 150px;
+    height: 150px;
+    margin-left: 0%;
+  }
+
+  .imageFooter {
+    width: 90%;
+    height: 90%;
+  }
+}

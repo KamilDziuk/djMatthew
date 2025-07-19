@@ -1,0 +1,17 @@
+b {
+  font-weight: 500;
+  position: relative;
+}
+b::before {
+  background-color: #000000;
+
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 100%;
+
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-10deg);
+}

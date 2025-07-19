@@ -1,0 +1,178 @@
+.header {
+  min-width: 100%;
+  height: 750px;
+  margin: 0;
+}
+
+.header h1 {
+  font-family: "Brush Script MT", cursive;
+  top: 200px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  font-size: 80px;
+  z-index: 0;
+  background: radial-gradient(
+    circle,
+    rgba(147, 0, 0, 0.722) 0%,
+    rgba(0, 0, 0, 0.655) 35%,
+    rgba(5, 64, 152, 0.645) 90%,
+    rgba(0, 0, 0, 0.603) 110%
+  );
+  background-size: 200% 200%;
+  animation: changingStructure 40s ease infinite;
+  padding: 6%;
+}
+
+@keyframes changingStructure {
+  0% {
+    background-position: 0% 50%;
+    clip-path: polygon(
+      44% 5%,
+      100% 0,
+      100% 60%,
+      79% 85%,
+      0 93%,
+      0% 60%,
+      15% 20%
+    );
+  }
+
+  10% {
+    background-position: 0% 50%;
+    clip-path: polygon(
+      44% 4%,
+      99% 13%,
+      84% 53%,
+      95% 96%,
+      13% 99%,
+      0 70%,
+      3% 16%
+    );
+  }
+
+  25% {
+    clip-path: polygon(
+      57% 16%,
+      93% 5%,
+      89% 61%,
+      100% 100%,
+      27% 87%,
+      16% 61%,
+      1% 13%
+    );
+  }
+
+  40% {
+    background-position: 100% 50%;
+    clip-path: polygon(
+      63% 23%,
+      76% 25%,
+      97% 50%,
+      100% 100%,
+      2% 92%,
+      0 70%,
+      1% 13%
+    );
+  }
+
+  50% {
+    background-position: 100% 50%;
+    clip-path: polygon(
+      35% 15%,
+      100% 0,
+      100% 60%,
+      84% 91%,
+      0 93%,
+      0% 60%,
+      11% 14%
+    );
+  }
+
+  70% {
+    clip-path: polygon(
+      65% 3%,
+      76% 25%,
+      89% 61%,
+      100% 100%,
+      2% 92%,
+      0 70%,
+      1% 13%
+    );
+  }
+
+  80% {
+    clip-path: polygon(
+      77% 1%,
+      93% 25%,
+      97% 50%,
+      100% 100%,
+      34% 77%,
+      0 70%,
+      1% 13%
+    );
+  }
+  90% {
+    background-position: 0% 50%;
+    clip-path: polygon(
+      57% 4%,
+      99% 13%,
+      97% 50%,
+      100% 100%,
+      13% 99%,
+      0 70%,
+      24% 22%
+    );
+  }
+
+  100% {
+    background-position: 0% 50%;
+    clip-path: polygon(
+      44% 5%,
+      100% 0,
+      100% 60%,
+      79% 85%,
+      0 93%,
+      0% 60%,
+      15% 20%
+    );
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header h1 {
+    font-size: 40px;
+  }
+  .header {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    height: 500px;
+  }
+
+  .header h1 {
+    padding: 6%;
+    top: 180px;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header h1 {
+    padding: 5%;
+    width: 80%;
+    top: 200px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 200px) {
+  .header h1 {
+    padding: 15%;
+    width: 90%;
+  }
+}

@@ -1,0 +1,98 @@
+footer {
+  background: linear-gradient(
+    30deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(54, 0, 0) 35%,
+    rgb(0, 102, 255) 90%,
+    rgb(0, 0, 0) 110%
+  );
+  background-size: 200% 200%;
+  animation: changingFooterColors 10s ease infinite;
+  padding: 1rem;
+  position: relative;
+  padding-bottom: 0%;
+   margin-top: -1%;
+  bottom: 0px;
+
+}
+
+@keyframes changingFooterColors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wrapImges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+footer h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0;
+  color: white;
+  font-size: 45px;
+  z-index: 99999;
+  position: relative;
+}
+
+
+@media screen and (max-width: 1250px) {
+  footer h1 {
+    padding-bottom: 6%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer h1 {
+    font-size: 45px;
+  }
+  .wrapImges {
+    flex-direction: column;
+  }
+
+  footer div {
+    padding-bottom: 20%;
+    bottom: 20px;
+
+  }
+  .wrapImges a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media screen and (max-width: 400px) {
+  footer h1 {
+    font-size: 30px;
+    padding-bottom: 20%;
+  }
+
+  footer {
+ margin-top: -2%;
+  }
+
+
+
+
+}
+@media screen and (max-width: 200px) {
+  footer h1 {
+    padding-bottom: 30%;
+  }
+}
