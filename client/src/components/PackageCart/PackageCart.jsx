@@ -1,5 +1,5 @@
 import Stress from "../Stress/Stress";
-import { motion } from "framer-motion";
+import { motion as Motion} from "framer-motion";
 import packagesCarts from "./PackageCart.module.css";
 
 export default function PackageCart({
@@ -13,7 +13,7 @@ export default function PackageCart({
       <div className={packagesCarts.packageCart}>
         <div>
           {packageImage}
-          <motion.p
+          <Motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -22,7 +22,7 @@ export default function PackageCart({
             <br />
             {packageText}
             <span>{prince}</span>
-          </motion.p>
+          </Motion.p>
         </div>
       </div>
     </>
