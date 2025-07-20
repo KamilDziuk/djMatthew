@@ -14,13 +14,13 @@ jobs:
         with:
           node-version: 20
       - name: Install frontend dependencies
-        working-directory: dj
+        working-directory: client
         run: npm ci
       - name: Build frontend
-        working-directory: dj
+        working-directory: client
         run: npm run build
       - name: Lint frontend
-        working-directory: dj
+        working-directory: client
         run: npm run lint
       - name: Install backend dependencies
         working-directory: server
