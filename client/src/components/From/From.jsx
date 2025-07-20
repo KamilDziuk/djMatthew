@@ -1,6 +1,6 @@
 // import Button from "../Button/Button";
 import { motion } from "framer-motion";
-import { useMenuBehaviorAfterSending } from "./menuBehavior";
+import { useMenuBehaviorAfterSending } from "./formBehavior";
 
 import fromStyle from "./From.module.css";
 import buttonStyles from "../Button/Button.module.css";
