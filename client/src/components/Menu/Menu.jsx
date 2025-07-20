@@ -1,7 +1,7 @@
 import SocialIcons from "../SocialIcons/SocialIcons";
 import { HamburgerIcons } from "../SocialIcons/SocialIcons";
 import Navigation from "../Navigation/Navigation";
-import { menuBehavior } from "./menuBehavior";
+import { useMenuBehavior } from "./menuBehavior";
 import styles from "./Menu.module.css";
 import imageStyles from "../Image/Image.module.css";
 import navigationStyles from "../Navigation/Navigation.module.css";
@@ -13,7 +13,7 @@ export default function Menu() {
     menuBeltStyle,
     hamburgerHandle,
     closeMobileHandle,
-  } = menuBehavior();
+  } = useMenuBehavior();
 
   return (
     <>

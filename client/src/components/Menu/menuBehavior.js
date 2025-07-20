@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function menuBehavior() {
+export function useMenuBehavior() {
   const [showHamburger, setShowHamburger] = useState(false);
   const [showCloseHandle, setShowCloseHandle] = useState(false);
   const [menuBeltStyle, setMenuBeltStyle] = useState(false);
