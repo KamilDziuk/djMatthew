@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
+import { motion as Motion} from "framer-motion";
 
 export default function Image({ imageHref, imageStyle }) {
   return (
     <>
-      <motion.img
+      <Motion.img
         loading="lazy"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
