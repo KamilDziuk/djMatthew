@@ -1,6 +1,6 @@
 // import Button from "../Button/Button";
 import { motion } from "framer-motion";
-import { menuBehaviorAfterSending } from "./menuBehavior";
+import { MenuBehaviorAfterSending } from "./menuBehavior";
 
 import fromStyle from "./From.module.css";
 import buttonStyles from "../Button/Button.module.css";
@@ -23,7 +23,7 @@ export default function Form() {
     setMessage,
     setFirstName,
     setLastName,
-  } = menuBehaviorAfterSending();
+  } = MenuBehaviorAfterSending();
   return (
     <>
       {successfulSending ? (
