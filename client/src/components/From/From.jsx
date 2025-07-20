@@ -1,5 +1,5 @@
 // import Button from "../Button/Button";
-import { motion } from "framer-motion";
+import { motion as Motion} from "framer-motion";
 import { useMenuBehaviorAfterSending } from "./formBehavior";
 
 import fromStyle from "./From.module.css";
@@ -27,7 +27,7 @@ export default function Form() {
   return (
     <>
       {successfulSending ? (
-        <motion.form
+        <Motion.form
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -80,7 +80,7 @@ export default function Form() {
           >
             Send
           </button>
-        </motion.form>
+        </Motion.form>
       ) : (
         <form className={fromStyle.from}>
           {!sendingError ? (
