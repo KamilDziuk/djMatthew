@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 export default function Button({
   items,
@@ -9,7 +9,7 @@ export default function Button({
   return (
     <>
       {items.map((item, index) => (
-        <motion.a
+        <Motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -20,7 +20,7 @@ export default function Button({
           className={buttonStyles}
         >
           {item}
-        </motion.a>
+        </Motion.a>
       ))}
     </>
   );
