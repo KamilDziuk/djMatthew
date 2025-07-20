@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion} from "framer-motion";
 import Menu from "../components/Menu/Menu";
 import Footer from "../components/Footer/Footer";
 import Section from "../components/Section/Section";
@@ -71,7 +71,7 @@ export default function About() {
           imageHref={"./images/sectionImage/section_image_4.webp"}
           imageStyle={imageStyles.packageCartImage}
         />
-        <motion.p
+        <Motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -92,7 +92,7 @@ export default function About() {
             items={["about"]}
             hrefs={["/about"]}
           />
-        </motion.p>
+        </Motion.p>
       </Section>
 
       <Image
