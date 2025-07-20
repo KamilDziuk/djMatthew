@@ -1,6 +1,8 @@
 
 # 🎧 djMatthew
 
+![presentation](/presentation.gif)
+
 **djMatthew** is a modern website for DJ Matthew — built with **React**, **CSS**, and **JavaScript**, powered by **Vite** on the frontend and a simple **Node.js** backend for email handling via **Nodemailer**.
 
 ## Technologies
