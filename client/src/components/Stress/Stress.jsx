@@ -3,7 +3,7 @@ import styleStress from "./Stress.module.css";
 export default function Stress({ children }) {
   return (
     <>
-      <Motion.b
+      <Motion.b className={styleStress.b}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2, ease: "easeInOut" }}
