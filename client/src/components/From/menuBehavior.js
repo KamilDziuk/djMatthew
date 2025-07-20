@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-export function MenuBehaviorAfterSending() {
+export function useMenuBehaviorAfterSending() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
