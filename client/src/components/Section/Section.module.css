@@ -18,7 +18,7 @@ section p {
 }
 
 /* ZERO SECTION ABOUT */
-.zeroSectionAbout {
+.zeroSectionAbout,.zeroSectionContact{
   background: #060d27;
   display: flex;
   clip-path: polygon(
