@@ -18,14 +18,14 @@ export function useGalleryLogic() {
   ];
 
   const videos = [
-    "/videos/galleryVideo/video_gallery_9.mp4",
-    "/videos/galleryVideo/video_gallery_0.mp4",
-    "/videos/galleryVideo/video_gallery_8.mp4",
-    "/videos/galleryVideo/video_gallery_1.mp4",
-    "/videos/galleryVideo/video_gallery_2.mp4",
-    "/videos/galleryVideo/video_gallery_4.mp4",
-    "/videos/galleryVideo/video_gallery_3.mp4",
-    "/videos/galleryVideo/video_gallery_7.mp4",
+    "/videos/galleryVideo/video_gallery_9.webm",
+    "/videos/galleryVideo/video_gallery_0.webm",
+    "/videos/galleryVideo/video_gallery_8.webm",
+    "/videos/galleryVideo/video_gallery_1.webm",
+    "/videos/galleryVideo/video_gallery_2.webm",
+    "/videos/galleryVideo/video_gallery_4.webm",
+    "/videos/galleryVideo/video_gallery_3.webm",
+    "/videos/galleryVideo/video_gallery_7.webm",
   ];
 
   useEffect(() => {
