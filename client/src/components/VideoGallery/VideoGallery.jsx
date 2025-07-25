@@ -13,7 +13,7 @@ export default function VideoGallery({ items }) {
           key={index}
           controls
         >
-          <source src={item} type="video/mp4"></source>
+          <source src={item} type="video/webm"></source>
         </Motion.video>
       ))}
     </>
