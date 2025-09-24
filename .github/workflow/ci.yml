@@ -19,9 +19,9 @@ jobs:
         with:
           node-version: "lts/*"
 
-      - name: Install frontend without devDependencies
+      - name: Install frontend
         working-directory: client
-        run: npm ci --omit=dev
+        run: npm ci 
 
       - name: Build frontend
         working-directory: client
@@ -31,6 +31,6 @@ jobs:
         working-directory: client
         run: npm run lint
 
-      - name: Install backend dependencies without devDependencies
+      - name: Install backend dependencies
         working-directory: server
-        run: npm ci --omit=dev
+        run: npm ci
