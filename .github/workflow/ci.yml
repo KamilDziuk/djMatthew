@@ -13,41 +13,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-        fetch-depth: 0  
+          fetch-depth: 0  
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
 
-
       - name: Install frontend without devDependencies
-  working-directory: client
-name: Frontend & Backend Build
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-        fetch-depth: 0  
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "lts/*"
-
-
-      - name: Install frontend without devDependencies
-  working-directory: client
-  run: npm install --omit=dev
-
+        working-directory: client
+        run: npm install --omit=dev
 
       - name: Build frontend
         working-directory: client
@@ -58,57 +33,6 @@ jobs:
         run: npm run lint
 
       - name: Install backend without devDependencies
-       working-directory: server
-      run: npm install --omit=dev
-
-
-
-      - name: Build frontend
-        working-directory: client
-        run: npm run build
-
-      - name: Lint frontend
-        working-directory: client
-        run: npm run lint
-
-      - name: Install backend without devDependencies
-       working-directory: server
-name: Frontend & Backend Build
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-        fetch-depth: 0  
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "lts/*"
-
-
-      - name: Install frontend without devDependencies
-  working-directory: client
-  run: npm install --omit=dev
-
-
-      - name: Build frontend
-        working-directory: client
-        run: npm run build
-
-      - name: Lint frontend
-        working-directory: client
-        run: npm run lint
-
-      - name: Install backend without devDependencies
-       working-directory: server
-      run: npm install --omit=dev
+        working-directory: server
+        run: npm install --omit=dev
 
