@@ -68,7 +68,7 @@ cd server
 2️⃣ Install dependencies:
 
 ```bash
-npm install
+npm ci --omit=dev    
 ```
 
 3️⃣ Create a `.env` file in `server/` with the following variables:
