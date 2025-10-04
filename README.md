@@ -86,9 +86,7 @@ You can generate a **Google App Password** here: [https://myaccount.google.com/a
 ```bash
 node contact.js
 ```
-
-Backend will run on [http://localhost:5000](http://localhost:5000)
-
+In case of local server backend will run for example on port 5000: [http://localhost:5000](http://localhost:5000)
 ---
 
 ### Install & Run the Frontend (Client)
