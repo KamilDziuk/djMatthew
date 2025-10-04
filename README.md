@@ -102,7 +102,7 @@ cd client
 2️⃣ Install dependencies:
 
 ```bash
-npm install
+npm install -D @vitejs/plugin-react
 ```
 
 3️⃣ Start the development server:
