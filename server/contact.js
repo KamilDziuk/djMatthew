@@ -3,19 +3,18 @@ import nodemailer from "nodemailer";
 import cors from "cors";
 import dotenv from "dotenv";
 
-dotenv.config(); //Loads environment variables from the .env file
+dotenv.config();
 
-const app = express(); //Creating an Express application
+const app = express();
 
 const port = process.env.PORT;
 
-app.use(cors()); //Setting up the middleware:
+app.use(cors());
 
-app.use(express.json()); //parses incoming requests from JSON into a JS object
+app.use(express.json());
 
-app.use(express.urlencoded({ extended: true })); //parses data from forms
+app.use(express.urlencoded({ extended: true }));
 
-//Defines a POST endpoint under the /contact path (It handles the contact form)
 app.post("/contact", async (req, res) => {
   try {
     const data = await sendEmail(req.body);
@@ -24,7 +23,7 @@ app.post("/contact", async (req, res) => {
 
     console.log("The message has been sent 🎉");
   } catch (err) {
-    res.status(500).send(err); //In case of an error, returns code 500 and the error text
+    res.status(500).send(err);
 
     console.log("Error while sending 🪲. Error:" + err.message);
   }
@@ -48,7 +47,6 @@ function sendEmail({ firstName, lastName, email, phone, message }) {
   const data = transporter.sendMail({
     from: process.env.USER,
     to: email,
-    //cc: process.env.USER, Optional
     subject: "DJ Matthew",
     text: `Thank you for contacting me!
 I’ll be back in touch with you very soon.
@@ -64,7 +62,7 @@ Message: ${message}`,
   return data;
 }
 
-//I start the server on the selected port and log the information
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
