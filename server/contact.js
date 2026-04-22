@@ -21,15 +21,14 @@ app.post("/contact", async (req, res) => {
 
     res.send(data);
 
-    console.log("The message has been sent 🎉");
+    console.log("The message has been sent");
   } catch (err) {
     res.status(500).send(err);
 
-    console.log("Error while sending 🪲. Error:" + err.message);
+    console.log("Error while sending. Error:" + err.message);
   }
 });
 
-//Function that sends email - returns Promise (transporter.sendMail returns Promise)
 function sendEmail({ firstName, lastName, email, phone, message }) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -37,13 +36,13 @@ function sendEmail({ firstName, lastName, email, phone, message }) {
       user: process.env.USER,
       pass: process.env.GOOGLE_APP_PASSWORD,
     },
-    //Allows TLS connections even when the certificate is unverified (not recommended for production)
+
     tls: {
       rejectUnauthorized: false,
     },
   });
 
-  //Configures the email content
+
   const data = transporter.sendMail({
     from: process.env.USER,
     to: email,
