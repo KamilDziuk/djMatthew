@@ -16,7 +16,7 @@ export function useMenuBehaviorAfterSending() {
 
     // Sending form data to the /contact endpoint using axios
     axios
-      .post("http://localhost:5000/contact", {
+      .post("http://localhost:3000/contact", {
         firstName,
         lastName,
         email,

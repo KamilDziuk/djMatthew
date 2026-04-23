@@ -1,5 +1,12 @@
 {
+  "name": "djmatthew",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "install-all": "npm install --prefix client && npm install --prefix server"
+  },
   "devDependencies": {
-    "vite": "^7.1.7"
+    "concurrently": "^9.0.0"
   }
 }
