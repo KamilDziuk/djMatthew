@@ -101,9 +101,6 @@ export default async function handler(req, res) {
       user: process.env.USER,
       pass: process.env.GOOGLE_APP_PASSWORD,
     },
-    tls: {
-      rejectUnauthorized: true,
-    },
   });
 
   const mailOptions = {
