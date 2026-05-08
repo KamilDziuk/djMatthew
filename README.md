@@ -33,7 +33,7 @@ djMatthew/
 │   ├── src/
 │   ├── public/
 │   └── package.json
-├── server/              # Backend: Node.js + Express
+├── api/              # Backend: Node.js + Express
 │   ├── contact.js
 │   └── package.json
 └── README.md
@@ -59,19 +59,19 @@ cd djMatthew
 
 ### Install & Run the Backend (Server)
 
-1️⃣ Go to the `server/` directory:
+Go to the `api/` directory:
 
 ```bash
-cd server
+cd api
 ```
 
-2️⃣ Install dependencies:
+Install dependencies:
 
 ```bash
 npm ci --omit=dev    
 ```
 
-3️⃣ Create a `.env` file in `server/` with the following variables:
+Create a `.env` file in `server/` with the following variables:
 
 ```env
 GOOGLE_APP_PASSWORD= Your Google generated App Password,
@@ -81,7 +81,7 @@ PORT= Your port
 
 You can generate a **Google App Password** here: [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)
 
-4️⃣ Start the server:
+Start the server:
 
 ```bash
 node contact.js
@@ -90,29 +90,29 @@ In case of local server backend will run for example on port 5000: [http://local
 ```
 ### Install & Run the Frontend (Client)
 
-1️⃣ Open a new terminal and go to the `client/` directory:
+Open a new terminal and go to the `client/` directory:
 
 ```bash
 cd client
 ```
 
-2️⃣ Install dependencies:
+Install dependencies:
 
 ```bash
 npm install -D @vitejs/plugin-react
 ```
 
-3️⃣ Start the development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 ##  Features
 
-✅ Responsive, modern website with animations and routing
-✅ Font Awesome icons
-✅ Contact form sending emails via Nodemailer
-✅ Separate backend with environment variable support and CORS
+Responsive, modern website with animations and routing
+Font Awesome icons
+Contact form sending emails via Nodemailer
+Separate backend with environment variable support and CORS
 
 ##  Look
  [djMatthew](https://www.matthew-dj.com/)
