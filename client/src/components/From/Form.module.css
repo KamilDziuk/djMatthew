@@ -28,6 +28,13 @@
   color: white;
 }
 
+.inputAlert {
+  margin: 1% !important;
+  padding: 1% !important;
+  font-size: 10px;
+  color: red !important;
+}
+
 @media (max-width: 990px) {
   .from {
     margin-top: 0%;

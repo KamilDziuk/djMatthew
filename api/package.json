@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "contact.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "nodemailer": "^7.0.5"
+    "nodemailer": "^8.0.7",
+    "zod": "^4.4.3"
   }
 }
