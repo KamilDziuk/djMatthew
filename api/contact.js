@@ -92,7 +92,7 @@ import { z } from "zod";
 const contactSchema = z.object({
   firstName: z.string().min(1).max(20),
   lastName: z.string().min(1).max(20),
-  email: z.email,
+  email: z.string().email(),
   phone: z.string().min(6).max(10),
   message: z.string().min(1).max(2000),
 });
@@ -103,6 +103,13 @@ export default async function handler(req, res) {
   }
 
   const result = contactSchema.safeParse(req.body);
+
+  if (!result.success) {
+    return res.status(400).json({
+      message: "Invalid form data",
+      errors: result.error.flatten(),
+    });
+  }
 
   const { firstName, lastName, email, phone, message } = result.data;
 
@@ -123,7 +130,7 @@ export default async function handler(req, res) {
 
   const mailOptions = {
     from: process.env.USER,
-    to: selfEmail,
+    to: email,
     cc: "kowalewskimateusz34@gmail.com",
     subject: "DJ Matthew",
     text: `Thank you for contacting me!
@@ -132,7 +139,7 @@ I’ll be back in touch with you very soon.
 Your message:
 First name: ${firstName}
 Last name: ${lastName}
-Email: ${selfEmail}
+Email: ${email}
 Phone: ${phone}
 Message: ${message}`,
   };
@@ -141,6 +148,10 @@ Message: ${message}`,
     await transporter.verify();
   } catch (error) {
     console.error("SMTP configuration error:", error);
+
+    return res.status(500).json({
+      message: "SMTP configuration error",
+    });
   }
 
   try {
