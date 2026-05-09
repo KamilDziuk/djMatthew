@@ -19,7 +19,7 @@ const contactSchema = z.object({
 
   phone: z
     .string()
-    .min(1, "Phone number too short")
+    .min(6, "Phone number too short")
     .max(20, "Phone number too long"),
 
   message: z
