@@ -29,10 +29,6 @@ export default function About() {
           <>
             If you’d like to book me for your wedding, party, or any special
             occasion, I’d love to hear from you!
-            <br /> Email:
-            <a href="mailto:kowalewskimateusz34@gmail.com">
-              kowalewskimateusz34@gmail.com
-            </a>
             <br />
             Phone:<a href="tel:+44 07470 720851"> +44 07470 720851</a>
           </>

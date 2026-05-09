@@ -1,5 +1,3 @@
-
-
 import Header from "../components/Header/Header";
 import Menu from "../components/Menu/Menu";
 import Image from "../components/Image/Image";
@@ -48,9 +46,7 @@ export default function Home() {
       ></Section>
 
       <Image
-        imageHref={
-          "/images/logoImage/vinyl-record-character-black.webp"
-        }
+        imageHref={"/images/logoImage/vinyl-record-character-black.webp"}
         imageStyle={imageStyles.logoSection}
       />
 
@@ -58,14 +54,29 @@ export default function Home() {
         sectionStyle={sectionStyles.firstSection}
         p={
           <>
-            Music tailored to you and your guests I believe that the right music
-            is the heart of a great celebration. That’s why I take the time to
-            understand your taste and blend your favourite genres into a
-            seamless set — whether it’s pop, dance, house, hip-hop, or a little
-            bit of everything. Using professional Traktor decks, a portable
-            controller, and a high-quality PA system, I make sure the sound is
-            clear and powerful no matter the venue. Add to that my lighting
-            setup and energetic mixing, and you’ll have a party to remember.
+            Music tailored to you and your guests I believe that the right music<br></br><br></br>
+            is the heart of every unforgettable celebration. Great music doesn’t
+            just fill the room — it creates emotions, connects people, and keeps
+            the energy alive from the very first song to the final track of the
+            night. That’s why I always take the time to understand your style,
+            your favourite artists, and the atmosphere you want to create for
+            your event. Whether you love chart hits, dance music, house,
+            hip-hop, R&B, disco classics, commercial remixes, or a mix of
+            everything, I carefully build a seamless set that matches the mood
+            of your guests and keeps the dance floor moving all night long.
+            Every event is unique, so I adapt the music live during the party to
+            make sure everyone is having an amazing time.<br></br><br></br> Using professional
+            Traktor decks, a portable DJ controller, and a high-quality PA sound
+            system, I deliver clear, balanced, and powerful sound no matter the
+            venue size. From small private parties to larger celebrations, the
+            setup is designed to provide both excellent audio quality and
+            reliability throughout the entire event. <br></br><br></br>To make the experience even
+            more memorable, I also use dynamic lighting effects that help create
+            the perfect party atmosphere. <br></br><br></br>Combined with smooth transitions,
+            energetic mixing, and crowd interaction, the result is a vibrant and
+            unforgettable experience for you and your guests. My goal is simple
+            — to create a night full of great music, positive energy, and
+            moments people will remember long after the party ends.
             <br />
             <Button
               buttonStyles={buttonStyles.button}
