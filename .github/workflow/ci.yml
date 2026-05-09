@@ -33,6 +33,6 @@ jobs:
         run: npm run lint
 
       - name: Install backend without devDependencies
-        working-directory: server
+        working-directory: api
         run: npm install --omit=dev
 
