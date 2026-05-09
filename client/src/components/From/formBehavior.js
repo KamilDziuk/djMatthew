@@ -15,7 +15,7 @@ const contactSchema = z.object({
     .min(1, "Last name is required")
     .max(20, "Max 20 characters"),
 
-  email: z.email("Invalid emial"),
+  email: z.string().email("Invalid emial"),
 
   phone: z
     .string()
