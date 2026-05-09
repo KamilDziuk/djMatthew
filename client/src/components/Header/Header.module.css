@@ -13,7 +13,7 @@
   color: white;
   font-weight: 900;
   position: absolute;
-  font-size: 80px;
+  font-size: 50px;
   z-index: 0;
   background: radial-gradient(
     circle,
@@ -144,7 +144,7 @@
 
 @media screen and (max-width: 1100px) {
   .header h1 {
-    font-size: 40px;
+    font-size: 20px;
   }
   .header {
     height: 600px;
@@ -159,7 +159,7 @@
   .header h1 {
     padding: 6%;
     top: 180px;
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 500px) {

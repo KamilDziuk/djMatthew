@@ -2,7 +2,7 @@
 section p {
   padding: 15%;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 20px;
   z-index: 99999;
 }
 
@@ -18,7 +18,8 @@ section p {
 }
 
 /* ZERO SECTION ABOUT */
-.zeroSectionAbout,.zeroSectionContact{
+.zeroSectionAbout,
+.zeroSectionContact {
   background: #060d27;
   display: flex;
   clip-path: polygon(
@@ -211,7 +212,7 @@ section p {
     position: relative;
     padding: 5%;
     margin-top: 0%;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .zeroSectionAbout p {
@@ -227,7 +228,7 @@ section p {
   .thirdSectionAbout p,
   .thirdSection p {
     padding: 5%;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .firstSection {
@@ -239,7 +240,7 @@ section p {
     position: relative;
     padding: 5%;
     padding-top: 20%;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .twoSectionPackages p {

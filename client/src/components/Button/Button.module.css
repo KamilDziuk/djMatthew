@@ -1,5 +1,5 @@
 .button {
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 500px;
   transition: 1s;
   border: 1px solid transparent;
@@ -31,7 +31,7 @@
   }
 
   .button {
-    font-size: 20px;
+  font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,12 +42,12 @@
 }
 @media screen and (max-width: 400px) {
   .button {
-    font-size: 17px;
+  font-size: 20px;
   }
 }
 @media screen and (max-width: 300px) {
   .button {
-    font-size: 15px;
+   font-size: 20px;
     padding: 5%;
   }
 }

@@ -11,9 +11,8 @@ footer {
   padding: 1rem;
   position: relative;
   padding-bottom: 0%;
-   margin-top: -1%;
+  margin-top: -1%;
   bottom: 0px;
-
 }
 
 @keyframes changingFooterColors {
@@ -36,8 +35,6 @@ footer {
   gap: 1rem;
 }
 
-
-
 footer h1 {
   display: flex;
   flex-wrap: wrap;
@@ -45,11 +42,10 @@ footer h1 {
   align-items: center;
   padding: 4% 0;
   color: white;
-  font-size: 45px;
+  font-size: 20px;
   z-index: 99999;
   position: relative;
 }
-
 
 @media screen and (max-width: 1250px) {
   footer h1 {
@@ -59,7 +55,7 @@ footer h1 {
 
 @media screen and (max-width: 750px) {
   footer h1 {
-    font-size: 45px;
+    font-size: 20px;
   }
   .wrapImges {
     flex-direction: column;
@@ -68,28 +64,23 @@ footer h1 {
   footer div {
     padding-bottom: 20%;
     bottom: 20px;
-
   }
   .wrapImges a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 400px) {
   footer h1 {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 20%;
   }
 
   footer {
- margin-top: -2%;
+    margin-top: -2%;
   }
-
-
-
-
 }
 @media screen and (max-width: 200px) {
   footer h1 {
