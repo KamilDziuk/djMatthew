@@ -113,7 +113,7 @@ export default async function handler(req, res) {
       pass: process.env.GOOGLE_APP_PASSWORD,
     },
     tls: {
-      rejectUnauthorized: false,
+      rejectUnauthorized: true,
     },
 
     connectionTimeout: 10000,
