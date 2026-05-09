@@ -1,5 +1,3 @@
-import nodemailer from "nodemailer";
-
 // import express from "express";
 // import cors from "cors";
 // import dotenv from "dotenv";
@@ -88,12 +86,25 @@ import nodemailer from "nodemailer";
 //   console.log(`Server is running on port ${port}`);
 // });
 
+import nodemailer from "nodemailer";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  firstName: z.string().min(1).max(20),
+  lastName: z.string().min(1).max(20),
+  email: z.email,
+  phone: z.string().min(6).max(10),
+  message: z.string().min(1).max(2000),
+});
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
 
-  const { firstName, lastName, email, phone, message } = req.body;
+  const result = contactSchema.safeParse(req.body);
+
+  const { firstName, lastName, email, phone, message } = result.data;
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -102,25 +113,35 @@ export default async function handler(req, res) {
       pass: process.env.GOOGLE_APP_PASSWORD,
     },
     tls: {
-      rejectUnauthorized: true,
+      rejectUnauthorized: false,
     },
+
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 10000,
   });
 
   const mailOptions = {
     from: process.env.USER,
-    to: email,
+    to: selfEmail,
     cc: "kowalewskimateusz34@gmail.com",
     subject: "DJ Matthew",
     text: `Thank you for contacting me!
 I’ll be back in touch with you very soon.
 
-Your message: 
+Your message:
 First name: ${firstName}
 Last name: ${lastName}
-Email: ${email}
+Email: ${selfEmail}
 Phone: ${phone}
 Message: ${message}`,
   };
+
+  try {
+    await transporter.verify();
+  } catch (error) {
+    console.error("SMTP configuration error:", error);
+  }
 
   try {
     await transporter.sendMail(mailOptions);
