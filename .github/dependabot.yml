@@ -9,7 +9,7 @@ updates:
       prefix: "deps"
 
   - package-ecosystem: "npm"
-    directory: "/server"
+    directory: "/api"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
