@@ -18,6 +18,7 @@
     "framer-motion": "^12.38.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-helmet-async": "^3.0.0",
     "react-hook-form": "^7.75.0",
     "react-router-dom": "^7.6.3",
     "styled-components": "^6.1.19",
