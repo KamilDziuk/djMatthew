@@ -57,7 +57,7 @@ djMatthew/
 │   ├── src/
 │   ├── public/
 │   └── package.json
-├── api/              # Backend: Node.js + Express
+├── api/              # Backend
 │   ├── contact.js
 │   └── package.json
 └── README.md
