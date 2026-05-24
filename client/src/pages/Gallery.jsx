@@ -9,14 +9,14 @@ import stylesHeader from "../components/Header/Header.module.css";
 import imageStyles from "../components/Image/Image.module.css";
 import sectionStyles from "../components/Section/Section.module.css";
 import buttonStyles from "../components/Button/Button.module.css";
-
 import { useGalleryLogic } from "../components/PictureGallery/useGalleryLogic";
+import SEO from "../components/Seo/SEO";
 
-const LazyPictureGallery = React.lazy(() =>
-  import("../components/PictureGallery/PictureGallery")
+const LazyPictureGallery = React.lazy(
+  () => import("../components/PictureGallery/PictureGallery"),
 );
-const LazyVideoGallery = React.lazy(() =>
-  import("../components/VideoGallery/VideoGallery")
+const LazyVideoGallery = React.lazy(
+  () => import("../components/VideoGallery/VideoGallery"),
 );
 
 export default function Gallery() {
@@ -24,6 +24,8 @@ export default function Gallery() {
 
   return (
     <>
+      <SEO title="DJ Matthew Gallery | Wedding & Party DJ Photos & Videos" description="Explore photos and videos from weddings, parties, and events hosted by DJ Matthew. See the atmosphere, lighting, DJ setup, and unforgettable moments from real celebrations." />
+
       <Menu />
       <Header
         styleHeader={stylesHeader.header}

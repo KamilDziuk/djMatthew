@@ -1,4 +1,4 @@
-import { motion as Motion} from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import Menu from "../components/Menu/Menu";
 import Footer from "../components/Footer/Footer";
 import Section from "../components/Section/Section";
@@ -8,10 +8,13 @@ import sectionStyles from "../components/Section/Section.module.css";
 import buttonStyles from "../components/Button/Button.module.css";
 import PackageCart from "../components/PackageCart/PackageCart";
 import imageStyles from "../components/Image/Image.module.css";
+import SEO from "../components/Seo/SEO";
 
 export default function About() {
   return (
     <>
+      <SEO title="DJ Packages & Pricing | Wedding & Event DJ Hire in Hampshire" description="Discover flexible DJ packages for weddings, receptions, parties, and private events. Professional sound system, lighting, and tailored music experiences available across Hampshire." />
+
       <Menu />
 
       <Section sectionStyle={sectionStyles.zeroSectionPackages}>
