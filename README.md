@@ -17,13 +17,37 @@
 
 ### Backend (Server)
 
-* [Node.js](https://nodejs.org/)
-* [Express](https://expressjs.com/)
 * [Nodemailer](https://nodemailer.com/about/)
 * [dotenv](https://www.npmjs.com/package/dotenv)
-* [CORS](https://www.npmjs.com/package/cors)
 
 ---
+
+### Security
+
+The contact form is protected with both frontend and backend validation to improve security and prevent malicious requests.
+
+Frontend Validation
+
+Implemented using React state handling and Zod schema validation:
+
+required field validation
+email format validation
+message length checks
+empty input prevention
+Backend Validation
+
+The backend uses Zod validation and data sanitization before processing email requests with Nodemailer.
+
+Security measures include:
+
+schema-based request validation
+malformed request protection
+invalid payload rejection
+basic anti-spam protection
+
+Sensitive configuration values are securely managed using dotenv and Vercel environment variables.
+---
+
 
 ##  Project Structure
 
@@ -45,7 +69,6 @@ djMatthew/
 
 ### Prerequisites
 
-* Node.js >= 18.x
 * npm >= 9.x
 
 ### Clone the repository
@@ -71,7 +94,7 @@ Install dependencies:
 npm ci --omit=dev    
 ```
 
-Create a `.env` file in `server/` with the following variables:
+Create a `.env` file in `server/` with the following variables - In production, environment variables are added to the hosting. In this case, to vercel:
 
 ```env
 GOOGLE_APP_PASSWORD= Your Google generated App Password,
