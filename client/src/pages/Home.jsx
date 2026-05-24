@@ -10,9 +10,13 @@ import stylesHeader from "../components/Header/Header.module.css";
 import buttonStyles from "../components/Button/Button.module.css";
 import videoStyles from "../components/Video/Video.module.css";
 import Video from "../components/Video/Video";
+import SEO from "../components/Seo/SEO";
+
 export default function Home() {
   return (
     <>
+      <SEO title="DJ Matthew – Wedding & Event DJ in Hampshire | Weddings, Parties & Events" description="Professional wedding and event DJ based in Lymington, Hampshire. DJ Matthew provides unforgettable music, lighting, and entertainment for weddings, private parties, and special events across Hampshire." />
+
       <Menu />
 
       <Header
@@ -54,7 +58,9 @@ export default function Home() {
         sectionStyle={sectionStyles.firstSection}
         p={
           <>
-            Music tailored to you and your guests I believe that the right music<br></br><br></br>
+            Music tailored to you and your guests I believe that the right music
+            <br></br>
+            <br></br>
             is the heart of every unforgettable celebration. Great music doesn’t
             just fill the room — it creates emotions, connects people, and keeps
             the energy alive from the very first song to the final track of the
@@ -65,18 +71,21 @@ export default function Home() {
             everything, I carefully build a seamless set that matches the mood
             of your guests and keeps the dance floor moving all night long.
             Every event is unique, so I adapt the music live during the party to
-            make sure everyone is having an amazing time.<br></br><br></br> Using professional
-            Traktor decks, a portable DJ controller, and a high-quality PA sound
-            system, I deliver clear, balanced, and powerful sound no matter the
-            venue size. From small private parties to larger celebrations, the
-            setup is designed to provide both excellent audio quality and
-            reliability throughout the entire event. <br></br><br></br>To make the experience even
-            more memorable, I also use dynamic lighting effects that help create
-            the perfect party atmosphere. <br></br><br></br>Combined with smooth transitions,
-            energetic mixing, and crowd interaction, the result is a vibrant and
-            unforgettable experience for you and your guests. My goal is simple
-            — to create a night full of great music, positive energy, and
-            moments people will remember long after the party ends.
+            make sure everyone is having an amazing time.<br></br>
+            <br></br> Using professional Traktor decks, a portable DJ
+            controller, and a high-quality PA sound system, I deliver clear,
+            balanced, and powerful sound no matter the venue size. From small
+            private parties to larger celebrations, the setup is designed to
+            provide both excellent audio quality and reliability throughout the
+            entire event. <br></br>
+            <br></br>To make the experience even more memorable, I also use
+            dynamic lighting effects that help create the perfect party
+            atmosphere. <br></br>
+            <br></br>Combined with smooth transitions, energetic mixing, and
+            crowd interaction, the result is a vibrant and unforgettable
+            experience for you and your guests. My goal is simple — to create a
+            night full of great music, positive energy, and moments people will
+            remember long after the party ends.
             <br />
             <Button
               buttonStyles={buttonStyles.button}

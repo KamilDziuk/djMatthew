@@ -8,9 +8,13 @@ import videoStyles from "../components/Video/Video.module.css";
 import stylesHeader from "../components/Header/Header.module.css";
 import sectionStyles from "../components/Section/Section.module.css";
 import imageStyles from "../components/Image/Image.module.css";
+import SEO from "../components/Seo/SEO";
+
 export default function About() {
   return (
     <>
+      <SEO title="Contact DJ Matthew | Book a Wedding or Event DJ in Hampshire" description="Get in touch with DJ Matthew to book professional DJ services for weddings, parties, and events in Hampshire. Enquire today for availability and personalised packages." />
+
       <Menu />
 
       <Header

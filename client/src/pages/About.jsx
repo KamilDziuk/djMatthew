@@ -9,10 +9,13 @@ import videoStyles from "../components/Video/Video.module.css";
 import stylesHeader from "../components/Header/Header.module.css";
 import sectionStyles from "../components/Section/Section.module.css";
 import buttonStyles from "../components/Button/Button.module.css";
+import SEO from "../components/Seo/SEO";
 
 export default function About() {
   return (
     <>
+      <SEO title="About DJ Matthew | Professional Wedding & Event DJ in Hampshire" description="Learn more about DJ Matthew – an experienced wedding and event DJ with over 10 years of experience creating unforgettable celebrations, parties, and wedding receptions in Hampshire." />
+
       <Menu />
 
       <Header
